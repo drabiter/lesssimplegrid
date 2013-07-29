@@ -9,17 +9,13 @@
 	border: 1px solid #f00;
 	background-color: #999;
 }
-
-// .grid:after {
-// 	content: "";
-// 	display: table;
-// 	clear: both;
-// }
-
-// [class*='col-'] {
-// 	float: left;
-// }
 // test only
+
+/* variables */
+
+@gutter: 20px;
+
+/* variables */
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -33,7 +29,7 @@ body {
 
 [class*='col-'] {
 	float: left;
-	padding-right: 20px;
+	padding-right: @gutter;
 }
 
 [class*='col-']:last-of-type {
@@ -55,11 +51,11 @@ body {
 }
 
 .grid-pad {
-	padding: 20px 0 0px 20px;
+	padding: @gutter 0 0 @gutter;
 }
 
 .grid-pad > [class*='col-']:last-of-type {
-	padding-right: 20px;
+	padding-right: @gutter;
 }
 
 .push-right {
@@ -160,7 +156,7 @@ body {
 		margin-right: 0px;
 		margin-top: 10px;
 		margin-bottom: 10px;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: @gutter;
+		padding-right: @gutter;
 	}
 }
