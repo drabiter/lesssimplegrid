@@ -29,12 +29,19 @@
 
 /* mixins */
 
-.family-btn (@color) {
+.btn-colors (@color) {
 	background-color: @color;
 
 	&:hover {
 		background-color: darken(@color, 15%);
 	}
+}
+
+.btn-sizes (@size) {
+	font-size: @size;
+	@small-pad: (0.45 * @size);
+	@tiny-pad: (0.35 * @size);
+	padding: @tiny-pad @small-pad @tiny-pad @small-pad;
 }
 
 .border-radius (@radius:10px) {
@@ -154,40 +161,45 @@ button, .btn {
 	vertical-align: middle;
 	cursor: pointer;
 	.border-radius(4px);
-	padding: .5rem;
 	color: #fff;
+	.btn-sizes(1rem);
 }
 
 .btn-large {
 	font-size: 1.5rem;
+	padding: 1.25rem 1.5rem 1.25rem 1.5rem;
 }
 
 .btn-2x {
-	font-size: 2rem;
+	.btn-sizes(2rem);
+}
+
+.btn-3x {
+	.btn-sizes(3rem);
 }
 
 .btn-blue {
-	.family-btn(@color-blue);
+	.btn-colors(@color-blue);
 }
 
 .btn-red {
-	.family-btn(@color-red);
+	.btn-colors(@color-red);
 }
 
 .btn-green {
-	.family-btn(@color-green);
+	.btn-colors(@color-green);
 }
 
 .btn-orange {
-	.family-btn(@color-orange);
+	.btn-colors(@color-orange);
 }
 
 .btn-dark {
-	.family-btn(@color-dark);
+	.btn-colors(@color-dark);
 }
 
 .btn-light {
-	.family-btn(@color-light);
+	.btn-colors(@color-light);
 }
 
 .btn-bordered {
