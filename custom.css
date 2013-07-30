@@ -1,0 +1,11 @@
+.header {
+	background-color: #3dcdc1;
+	color: #fff;
+	min-height: 50%;
+}
+
+.border-thin, .content {
+	/*border: .1rem solid #000;*/
+	background-color: #bbb;
+	padding: .25rem;
+}
