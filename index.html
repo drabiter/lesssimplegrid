@@ -31,11 +31,13 @@
 			<li class="float-right">
 				<script id='flattrbtn'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=drabiter&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('flattrbtn');</script>
 			</li>
-			<li class="float-right">
-				<a href="https://github.com/drabiter/LessSimpleGrid">
-					<i class="icon-github icon-large"></i>
-				</a>
+			<!-- <li class="float-right">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://github.com/drabiter/LessSimpleGrid" data-text="Check out LessSimpleGrid -" data-related="drabiter">Tweet</a>
 			</li>
+			<li class="float-right">
+				<iframe src="http://ghbtns.com/github-btn.html?user=drabiter&repo=lesssimplegrid&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+			</li> -->
 		</ul>
 
 		<div id="header">
@@ -55,8 +57,10 @@
 			</div>
 			<div class="grid space-top space-bottom grid-pad">
 				<div class="col-1-1 text-center">
-					<!-- <a class="btn btn-red btn-2x" href="#">Download</a> -->
 					<a class="btn btn-dark btn-2x" href="https://github.com/drabiter/LessSimpleGrid"><i class="icon-github-alt icon-large"></i> Grab the Source</a>
+					<a class="btn btn-red btn-2x" href="build/style.min.css" >
+						<i class="icon-download"></i> Download CSS
+					</a>
 				</div>
 			</div>
 		</div>
@@ -941,6 +945,10 @@
 		  ga('create', 'UA-34867032-2', 'drabiter.com');
 		  ga('send', 'pageview');
 
+		</script>
+
+		<script>
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 		</script>
 		
 	</body>
