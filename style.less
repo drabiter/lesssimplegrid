@@ -42,6 +42,7 @@
 	@small-pad: (0.45 * @size);
 	@tiny-pad: (0.35 * @size);
 	padding: @tiny-pad @small-pad @tiny-pad @small-pad;
+	display: inline-block;
 }
 
 .border-radius (@radius:10px) {
@@ -79,7 +80,7 @@ html, body {
 	// max-width: 1140px;
 	min-width: 755px;
 	margin: 0 auto;
-	overflow: hidden;
+	position: relative;
 }
 
 .grid:after {
@@ -165,6 +166,7 @@ button, .btn {
 	.border-radius(4px);
 	color: #fff;
 	.btn-sizes(1rem);
+	overflow: hidden;
 }
 
 .btn-large {
