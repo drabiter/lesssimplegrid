@@ -389,6 +389,8 @@ a {
 
 /* offset */
 
+/* wrap */
+
 .wrapword {
 	white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
 	white-space: -pre-wrap;      /* Opera 4-6 */
@@ -402,6 +404,16 @@ a {
 pre {
 	.wrapword;
 }
+
+/* wrap */
+
+/* hide */
+
+.mobile-show {
+	display: none;
+}
+
+/* hide */
 
 @media handheld, only screen and (max-width: 767px) {
 
@@ -430,6 +442,15 @@ pre {
 		padding-right: @gutter;
 	}
 
-	.col-drop {
+	.mobile-text-center {
+		text-align: center;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+
+	.mobile-show {
+		display: block;
 	}
 }
