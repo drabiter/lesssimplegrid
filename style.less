@@ -34,6 +34,38 @@
 	border-radius: 					@radius;
 }
 
+.space-top (@amount) {
+	padding-top: @amount;
+
+	&-small {
+		padding-top: (.5 * @amount);
+	}
+
+	&-tiny {
+		padding-top: (.25 * @amount);
+	}
+
+	&-empty {
+		padding-top: 0;
+	}
+}
+
+.space-bottom (@amount) {
+	padding-bottom: @amount;
+
+	&-small {
+		padding-bottom: (.5 * @amount);
+	}
+
+	&-tiny {
+		padding-bottom: (.25 * @amount);
+	}
+
+	&-empty {
+		padding-bottom: 0;
+	}
+}
+
 /* mixins */
 
 *, *:after, *:before {
@@ -88,21 +120,12 @@ html, body {
 
 /* space */
 
-.no-space-top {
-	margin-top: 0;
-	padding-top: 0;
-}
-
-.space-top-small {
-	padding-top: 1rem;
-}
-
 .space-top {
-	padding-top: 2rem;
+	.space-top(2em);
 }
 
-.space-bottom {
-	padding-bottom: 2rem;
+.sapce-bottom {
+	.space-bottom(2em);
 }
 
 /* space */
