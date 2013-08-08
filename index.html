@@ -153,7 +153,7 @@
 			</div>
 			<div class="grid grid-pad">
 				<div class="col-11-12 float-center">
-					<div class="content">.float-center <span class="text-small">(Note: <code>.float-center</code> will conquer whole grid! If you want to center a column safely, use offset)</span></div>
+					<div class="content">.float-center</div>
 				</div>
 			</div>
 			<div class="grid">
@@ -162,6 +162,7 @@
 &ltdiv class="grid"&gt
 	&ltdiv class="col-5-12 float-center"&gt.float-center&lt/div&gt
 &lt/div&gt</pre>
+					<span class="text-small"><code>.float-center</code> will conquer whole grid! If you want to center a column safely, use offset.</span>
 				</div>
 			</div>
 		</div>
@@ -171,28 +172,27 @@
 				<div class="col-1-1 text-center"><h2>Space</h2></div>
 			</div>
 			<div class="grid">
-				<div class="col-1-1 text-center"><div class="content">Previous grid</div></div>
+				<div class="col-1-1 text-center"><div class="content">Another grid</div></div>
 			</div>
 			<div class="grid grid-pad">
-				<div class="col-1-12 space-top"><div class="content">.space-top</div></div>
-				<div class="col-1-12 space-top-small"><div class="content">.space-top-small</div></div>
-				<div class="col-1-12 space-top-tiny"><div class="content">.space-top-tiny</div></div>
-				<div class="col-1-12 space-top-empty"><div class="content">.space-top-empty</div></div>
-				<div class="col-2-12 space-bottom"><div class="content">.space-bottom</div></div>
-				<div class="col-2-12 space-bottom-small"><div class="content">.space-bottom-small</div></div>
-				<div class="col-2-12 space-bottom-tiny"><div class="content">.space-bottom-tiny</div></div>
-				<div class="col-2-12 space-bottom-empty"><div class="content">.space-bottom-empty</div></div>
+				<div class="col-3-12 space-top"><div class="content">.space-top</div></div>
+				<div class="col-3-12 space-top-small"><div class="content">.space-top-small</div></div>
+				<div class="col-3-12 space-top-tiny"><div class="content">.space-top-tiny</div></div>
+				<div class="col-3-12 space-top-empty"><div class="content">.space-top-empty</div></div>
 			</div>
 			<div class="grid">
-				<div class="col-1-1 text-center"><div class="content">Next grid</div></div>
+				<div class="col-1-1 text-center"><div class="content">Another grid</div></div>
 			</div>
 			<div class="grid">
 				<div class="col-8-12 float-center">
 					<pre class="prettyprint linenums lang-html">
 &ltdiv class="grid grid-pad"&gt
-	&ltdiv class="col-4-12 off-2-12 space-top"&gt.space-top&lt/div&gt
-	&ltdiv class="col-4-12 space-bottom"&gt.space-bottom&lt/div&gt
+	&ltdiv class="col-3-12 space-top"&gt.space-top&lt/div&gt
+	&ltdiv class="col-3-12 space-top-small"&gt.space-top-small&lt/div&gt
+	&ltdiv class="col-3-12 space-top-tiny"&gt.space-top-tiny&lt/div&gt
+	&ltdiv class="col-3-12 space-top-empty"&gt.space-top-empty&lt/div&gt
 &lt/div&gt</pre>
+				<span class="text-small">change *-top-* to *-bottom-* for bottom spacing</span>
 				</div>
 			</div>
 		</div>
@@ -202,16 +202,16 @@
 				<div class="col-1-1 text-center"><h2>Hide</h2></div>
 			</div>
 			<div class="grid">
-				<div class="col-1-1 text-center mobile-hide"><div class="content">Will not appear on mobile.</div></div>
+				<div class="col-1-1 text-center mobile-hide"><div class="content">This will not appear on mobile.</div></div>
 			</div>
 			<div class="grid">
-				<div class="col-1-1 text-center mobile-show"><div class="content">Will appear on mobile only.</div></div>
+				<div class="col-1-1 text-center mobile-show"><div class="content">This will appear on mobile only.</div></div>
 			</div>
 			<div class="grid">
 				<div class="col-8-12 float-center">
 					<pre class="prettyprint linenums lang-html">
-&ltdiv class="col-1-1 text-center mobile-hide"&gtWill not appear on mobile.&lt/div&gt
-&ltdiv class="col-1-1 text-center mobile-show"&gtWill appear on mobile only.&lt/div&gt</pre>
+&ltdiv class="col-1-1 text-center mobile-hide"&gtThis will not appear on mobile.&lt/div&gt
+&ltdiv class="col-1-1 text-center mobile-show"&gtThis will appear on mobile only.&lt/div&gt</pre>
 				</div>
 			</div>
 		</div>
